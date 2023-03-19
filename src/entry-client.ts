@@ -1,5 +1,8 @@
-import './style.css'
-import './typescript.svg'
-import { setupCounter } from './counter'
+//import scss
+import './assets/index.scss'
 
-setupCounter(document.querySelector('#counter') as HTMLButtonElement)
+//imort script
+import { setupMap } from './script/map'
+
+//setup games
+setupMap(document.querySelector('.map') as HTMLDivElement)
