@@ -23,6 +23,7 @@ setupMap(map);
 
 //listen keydown
 document.addEventListener('keydown', (keydown) => {
+  console.log(keydown)
   listenKey(direction, keydown)
   moovePerso(direction, perso, map)
   arrayPorte.forEach((porte) => {
