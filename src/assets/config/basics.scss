@@ -5,12 +5,12 @@
 
 body {
   overflow: hidden;
+  margin: 0;
 }
 
 #app {
   height: 100vh;
   box-sizing: border-box;
-  margin: 0;
   background-color: var(--secondary);
   display: flex;
   justify-content: center;
