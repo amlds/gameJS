@@ -3,12 +3,15 @@
   --secondary: #fff;
 }
 
+body {
+  overflow: hidden;
+}
+
 #app {
   height: 100vh;
   box-sizing: border-box;
   margin: 0;
   background-color: var(--secondary);
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,4 +47,6 @@
   position: absolute;
   top: 50%;
   left: 50%;
+
+  transition: all 0.1s ease-in-out;
 }
