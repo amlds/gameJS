@@ -1,0 +1,10 @@
+.perso {
+  width: 20px;
+  height: 20px;
+  background-color: var(--primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transition: all 0.1s ease-in-out;
+}

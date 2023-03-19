@@ -1,0 +1,22 @@
+.map {
+  width: 100%;
+  height: 100%;
+  border: 5px solid var(--primary);
+  position: relative;
+}
+
+.top {
+  width: 100%;
+  position: absolute;
+  top: -5px;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30%;
+}
+
+.porte {
+  width: 100px;
+  height: 5px;
+  background-color: var(--secondary);
+}
