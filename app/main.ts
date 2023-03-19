@@ -1,6 +1,7 @@
 const express = require('express');
 const dotenv = require('dotenv');
 const path = require('path');
+const publicDirectoryPath = path.join(__dirname, '../public');
 
 const livereload = require('livereload');
 const connectLivereload = require('connect-livereload');
@@ -21,18 +22,7 @@ liveReloadServer.server.once('connection', () => {
   }, 100);
 });
 
-app.get(
-  '/',
-  (
-    req: {send: (arg0: string) => void},
-    res: {
-      sendFile(arg0: string): string;
-      send: (arg1: string) => void;
-    }
-  ) => {
-    res.sendFile(path.join(__dirname, 'public/index.html'));
-  }
-);
+app.use(express.static(publicDirectoryPath));
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
